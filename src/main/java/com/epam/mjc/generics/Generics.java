@@ -3,7 +3,6 @@ package com.epam.mjc.generics;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.net.ssl.ExtendedSSLSession;
 
 public class Generics<T extends Object> {
 
