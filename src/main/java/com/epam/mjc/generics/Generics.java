@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Generics<T extends Object> {
+public class Generics {
 
     //TODO: Refactor Method-1
     public List<List<String>> boxingMethod(String name) {
@@ -16,13 +16,13 @@ public class Generics<T extends Object> {
     }
 
     //TODO: Refactor Method-2
-    public T genericMethod(T data) {
+    public <T extends Object>T genericMethod(T data) {
         return data;
     }
 
     //TODO: Refactor Method-3
-    public void cloneMethod(List<T> consumer, List<T> producer) {
-       		consumer.addAll(producer);
+    public <T> void cloneMethod(List<T> consumer, List<? extends T> producer) {
+    	consumer.addAll(producer);
     }
 
 }
